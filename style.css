@@ -57,7 +57,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  background-color: var(--color-paper);
+  background: linear-gradient(to bottom, #e5e0db 0%, #dcd5d0 30%, #cabeb7 65%, #c0b3ae 100%);
   color: var(--color-text-dark);
   line-height: 1.8;
   overflow-x: hidden;
@@ -200,10 +200,6 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--color-paper);
-  background-image: 
-    radial-gradient(circle at center, transparent 30%, rgba(229, 224, 219, 0.45) 100%),
-    var(--bg-noise);
   padding: 120px 24px 80px;
   position: relative;
   overflow: hidden;
@@ -246,12 +242,7 @@ button {
 
 /* --- Professor Greetings (CSS Paper Texture) --- */
 .greetings {
-  background-color: var(--color-paper);
-  background-image: 
-    radial-gradient(circle at center, transparent 30%, rgba(229, 224, 219, 0.4) 100%),
-    var(--bg-noise);
   padding: 120px 0;
-  border-top: 1px solid rgba(45, 38, 34, 0.06);
 }
 
 .greetings-header {
@@ -312,10 +303,9 @@ button {
   margin-bottom: 18px;
 }
 
-/* --- Curatorial Intent (Deep Charcoal Theme) --- */
+/* --- Curatorial Intent (Light Theme) --- */
 .intent {
-  background-color: var(--color-charcoal);
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   padding: 140px 0;
   position: relative;
   overflow: hidden;
@@ -324,7 +314,7 @@ button {
 .intent-borders {
   position: absolute;
   inset: 40px;
-  border: 1px solid rgba(229, 224, 219, 0.05);
+  border: 1px solid rgba(45, 38, 34, 0.08);
   pointer-events: none;
 }
 
@@ -338,7 +328,7 @@ button {
 .intent-num {
   font-family: var(--font-mono);
   font-size: 12px;
-  color: var(--color-gold);
+  color: var(--color-accent-red);
   letter-spacing: 0.15em;
   margin-bottom: 12px;
   display: block;
@@ -356,7 +346,7 @@ button {
   display: block;
   width: 30px;
   height: 1.5px;
-  background: var(--color-gold);
+  background: var(--color-accent-red);
   margin: 18px auto 0;
 }
 
@@ -381,12 +371,10 @@ button {
   font-weight: 700;
 }
 
-/* --- Program (8 Teams Accordion - Deep Charcoal Theme) --- */
+/* --- Program (8 Teams Accordion - Light Theme) --- */
 .program {
-  background-color: var(--color-charcoal);
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   padding: 100px 0 140px;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .program-header {
@@ -406,7 +394,7 @@ button {
   display: block;
   width: 40px;
   height: 1.5px;
-  background: var(--color-gold);
+  background: var(--color-accent-red);
   margin: 16px auto 0;
 }
 
@@ -419,22 +407,22 @@ button {
 }
 
 .accordion-item {
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(45, 38, 34, 0.1);
   border-radius: var(--radius-md);
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.4);
   transition: all 0.4s var(--ease-expo);
   overflow: hidden;
 }
 
 .accordion-item:hover {
-  border-color: rgba(255, 255, 255, 0.18);
-  background-color: rgba(255, 255, 255, 0.02);
+  border-color: rgba(45, 38, 34, 0.22);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .accordion-item.active {
-  border-color: var(--color-gold);
-  background-color: rgba(255, 255, 255, 0.025);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  border-color: var(--color-accent-red);
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px rgba(45, 38, 34, 0.05);
 }
 
 .accordion-header {
@@ -455,7 +443,7 @@ button {
 .accordion-index {
   font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--color-gold);
+  color: var(--color-accent-red);
 }
 
 .accordion-song-title {
@@ -474,7 +462,7 @@ button {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(45, 38, 34, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -482,7 +470,7 @@ button {
 }
 
 .accordion-item:hover .accordion-icon {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(45, 38, 34, 0.3);
 }
 
 .accordion-icon svg {
@@ -494,8 +482,8 @@ button {
 
 .accordion-item.active .accordion-icon {
   transform: rotate(180deg);
-  border-color: var(--color-gold);
-  color: var(--color-gold);
+  border-color: var(--color-accent-red);
+  color: var(--color-accent-red);
 }
 
 /* Smooth Accordion Height Expansion Grid layout */
@@ -516,7 +504,7 @@ button {
 
 .accordion-body {
   padding: 12px 32px 32px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(45, 38, 34, 0.08);
 }
 
 /* Song Concept / Description */
@@ -524,12 +512,12 @@ button {
   font-family: var(--font-main);
   font-size: 14.5px;
   line-height: 1.8;
-  color: rgba(229, 224, 219, 0.8);
+  color: var(--color-text-dark);
   margin-bottom: 28px;
   word-break: keep-all;
   padding: 16px 20px;
-  background: rgba(255, 255, 255, 0.02);
-  border-left: 2px solid var(--color-gold);
+  background: rgba(45, 38, 34, 0.03);
+  border-left: 2px solid var(--color-accent-red);
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
@@ -546,7 +534,7 @@ button {
   grid-template-columns: 120px 1fr;
   gap: 24px;
   padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(45, 38, 34, 0.08);
   align-items: baseline;
 }
 
@@ -557,23 +545,21 @@ button {
 .performer-row-role {
   font-size: 13px;
   font-weight: 700;
-  color: var(--color-gold);
+  color: var(--color-accent-red);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
 .performer-row-names {
   font-size: 15px;
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   line-height: 1.7;
 }
 
 /* --- Credits Section (Light Sand Theme) --- */
 .credits {
-  background-color: var(--color-paper-dark);
   color: var(--color-text-dark);
   padding: 100px 0 140px;
-  border-top: 1px solid rgba(45, 38, 34, 0.08);
 }
 
 .credits-header {
@@ -631,12 +617,7 @@ button {
 
 /* --- Footer (CSS Paper Texture, No Guestbook) --- */
 .footer-guestbook {
-  background-color: var(--color-paper);
-  background-image: 
-    radial-gradient(circle at center, transparent 30%, rgba(229, 224, 219, 0.45) 100%),
-    var(--bg-noise);
   padding: 100px 0 60px;
-  border-top: 1px solid rgba(45, 38, 34, 0.08);
 }
 
 .footer-cta-container {
@@ -773,10 +754,8 @@ button {
 
 /* --- Videos Section (Light Theme) --- */
 .videos {
-  background-color: var(--color-paper);
   color: var(--color-text-dark);
   padding: 100px 0;
-  border-top: 1px solid rgba(45, 38, 34, 0.06);
 }
 
 .videos-header {
