@@ -20,7 +20,7 @@
       <div class="nav-links">
         <a href="#greetings" class="nav-link">GREETINGS</a>
         <a href="#intent" class="nav-link">CONCEPT</a>
-        <a href="#videos" class="nav-link">TRAILER</a>
+        <a href="#videos" class="nav-link">TEASER</a>
         <a href="#program" class="nav-link">SETLIST</a>
         <a href="#credits" class="nav-link">STAFF</a>
         <a href="#footer" class="nav-link">GUESTBOOK</a>
@@ -31,7 +31,7 @@
   <!-- Hero Section -->
   <section class="hero" id="hero">
     <div class="hero-content">
-      <img src="assets/gyeol_main_artwork_transparent.png" class="hero-artwork" alt="결 — 서로 다른 결의 나무들이 맞닿아 하나의 산맥을 이루다">
+      <img src="assets/gyeol_calligraphy.png" class="hero-calligraphy" alt="결 — 서로 다른 결의 나무들이 맞닿아 하나의 산맥을 이루다">
     </div>
     <div class="hero-scroll-indicator">
       <span>scroll</span>
@@ -95,7 +95,7 @@
   <section class="videos section" id="videos">
     <div class="container reveal">
       <div class="videos-header">
-        <h2 class="videos-title">Teaser</h2>
+        <h2 class="videos-title">TEASER</h2>
       </div>
       <div class="videos-grid">
         <div class="video-card">
@@ -141,7 +141,7 @@
   <section class="program section" id="program">
     <div class="container reveal">
       <div class="program-header">
-        <h2 class="program-title">Setlist</h2>
+        <h2 class="program-title">SETLIST</h2>
       </div>
 
       <!-- Accordion List -->
@@ -201,6 +201,20 @@
 
     </div>
   </section>
+
+  <!-- Quick Navigation Buttons (Top/Bottom) -->
+  <div class="quick-nav">
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="quick-nav-btn quick-nav-top" title="맨 위로 가기">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+    <button onclick="document.getElementById('footer').scrollIntoView({behavior: 'smooth'})" class="quick-nav-btn quick-nav-bottom" title="맨 아래로 가기">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+  </div>
 
   <!-- Scripts -->
   <script src="app.js"></script>

@@ -205,13 +205,12 @@ button {
   overflow: hidden;
 }
 
-.hero-artwork {
-  max-width: 860px;
+.hero-calligraphy {
+  max-width: 540px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(0 6px 20px rgba(56, 47, 43, 0.07));
   animation: fadeInUp 1.2s var(--ease-expo) both;
 }
 
@@ -847,6 +846,47 @@ button {
   }
 }
 
+/* Quick Navigation Buttons (Top / Bottom) */
+.quick-nav {
+  position: fixed;
+  bottom: 40px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 999;
+}
+
+.quick-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(45, 38, 34, 0.12);
+  color: var(--color-text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(45, 38, 34, 0.08);
+  transition: all 0.3s var(--ease-expo);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.quick-nav-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.quick-nav-btn:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-text-light);
+  border-color: var(--color-charcoal);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(45, 38, 34, 0.15);
+}
+
 /* --- Responsive Adaptations --- */
 @media (max-width: 768px) {
   .nav {
@@ -906,5 +946,17 @@ button {
   }
   .footer-guestbook {
     padding: 80px 0 40px;
+  }
+  .quick-nav {
+    bottom: 24px;
+    right: 16px;
+  }
+  .quick-nav-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .quick-nav-btn svg {
+    width: 14px;
+    height: 14px;
   }
 }
