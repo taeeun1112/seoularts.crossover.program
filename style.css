@@ -205,12 +205,13 @@ button {
   overflow: hidden;
 }
 
-.hero-calligraphy {
-  max-width: 540px;
+.hero-artwork {
+  max-width: 860px;
   width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  filter: drop-shadow(0 6px 20px rgba(56, 47, 43, 0.07));
   animation: fadeInUp 1.2s var(--ease-expo) both;
 }
 
