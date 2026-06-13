@@ -57,7 +57,8 @@ html {
 
 body {
   font-family: var(--font-main);
-  background: linear-gradient(to bottom, #e5e0db 0%, #dcd5d0 30%, #cabeb7 65%, #c0b3ae 100%);
+  background: linear-gradient(to bottom, #e3dedb, #cabeb7) no-repeat fixed;
+  background-size: cover;
   color: var(--color-text-dark);
   line-height: 1.8;
   overflow-x: hidden;
