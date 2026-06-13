@@ -23,8 +23,8 @@
   /* Color System */
   --color-paper: #e5e0db;
   --color-paper-dark: #cfc6be;
-  --color-charcoal: #361212;
-  --color-charcoal-light: #4c1b1b;
+  --color-charcoal: #382f2b;
+  --color-charcoal-light: #473c38;
   --color-text-dark: #2c2522;
   --color-text-light: #e5e0db;
   --color-text-muted: #8c8078;
@@ -686,24 +686,24 @@ button {
 .btn-guestbook {
   background-color: var(--color-charcoal);
   color: var(--color-text-light);
-  box-shadow: 0 4px 15px rgba(54, 18, 18, 0.15);
+  box-shadow: 0 4px 15px rgba(56, 47, 43, 0.15);
 }
 
 .btn-guestbook:hover {
   background-color: var(--color-charcoal-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(54, 18, 18, 0.25);
+  box-shadow: 0 8px 25px rgba(56, 47, 43, 0.25);
 }
 
 .btn-instagram {
   background-color: transparent;
   color: var(--color-charcoal);
-  border: 1.5px solid rgba(54, 18, 18, 0.2);
+  border: 1.5px solid rgba(56, 47, 43, 0.2);
 }
 
 .btn-instagram:hover {
-  background-color: rgba(54, 18, 18, 0.04);
-  border-color: rgba(54, 18, 18, 0.6);
+  background-color: rgba(56, 47, 43, 0.04);
+  border-color: rgba(56, 47, 43, 0.6);
   transform: translateY(-2px);
 }
 
